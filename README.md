@@ -14,14 +14,17 @@ In order to run this service, below are steps to be followed.
 
       2.1. Run the script in your terminal, passing country codes as arguments. For example:
       
-     _ python country_lookup.py --countryCodes AU US CA_
+      _python country_lookup.py --countryCodes AU US CA_
+   
       This will look up and display the country names for the specified country codes.
       
       2.2. To update the data from the API, use the --update flag:
       
       _python country_lookup.py --update_
+
       This will fetch the latest data from the API and store it in the data.json file.
-3. For executing the app.py script to run the service as REST, we can follow below steps:
+   
+4. For executing the app.py script to run the service as REST, we can follow below steps:
 
 
       3.1. Install Flask: To install Flask, run the following command:
@@ -31,6 +34,7 @@ In order to run this service, below are steps to be followed.
       3.2. Run the Service: In your terminal, navigate to the directory where app.py is located and run the Python script using the following command:
 
       _python app.py_
+   
       This will start the Flask application, and you should see output indicating that the service is running.
 
       3.3. Access the Service:
