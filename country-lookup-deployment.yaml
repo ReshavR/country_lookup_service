@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: country-lookup
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: country-lookup
+  template:
+    metadata:
+      labels:
+        app: country-lookup
+    spec:
+      containers:
+      - name: country-lookup
+        image: country-lookup-service
+        ports:
+        - containerPort: 80
